@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
     flex-direction: column;
 }
 
-/* ==================== NAVBAR ==================== */
 .sc-header {
     background: #111213;
     border-bottom: 1px solid #1f2124;
@@ -117,7 +116,6 @@ body {
     box-shadow: 0 0 12px rgba(27, 217, 106, 0.3);
 }
 
-/* ==================== HERO SECTION ==================== */
 .hero-section {
     padding: 70px 20px 50px;
     background: radial-gradient(circle at top, rgba(27, 217, 106, 0.08) 0%, rgba(13, 14, 15, 0) 70%);
