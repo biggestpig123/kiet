@@ -39,7 +39,7 @@
             <!-- Big Search Bar -->
             <div class="hero-search-wrapper">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="hero-search-input" placeholder="Search mods, resource packs, shaders...">
+                <input type="text" id="search-input" class="hero-search-input" placeholder="Search mods, resource packs, shaders...">
                 <button class="hero-search-btn">Search</button>
             </div>
 
@@ -58,7 +58,7 @@
     <main class="main-container">
         <div class="container">
             
-            <!-- Featured Mods Grid -->
+            <!-- Featured Mods Grid Header -->
             <div class="section-header d-flex justify-content-between align-items-center mb-4">
                 <div>
                     <h3 class="fw-bold text-white mb-1">Featured Projects</h3>
@@ -67,136 +67,8 @@
                 <a href="./discover.html" class="see-more-link">View all <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
-            <div class="row g-4 mb-5">
-                <!-- Project Card 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="./img/images (3).jpg" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Sodium</h5>
-                                <span class="project-author">by <a href="#">jellysquid3</a></span>
-                                <p class="project-desc">A modern rendering engine for Minecraft that greatly improves frame rates and reduces micro-stutter.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 45.2M</span>
-                                <span><i class="fa-solid fa-heart"></i> 12.8K</span>
-                            </div>
-                            <span class="badge-type">Mod</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="https://picsum.photos/64/64?random=2" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Iris Shaders</h5>
-                                <span class="project-author">by <a href="#">coderbot</a></span>
-                                <p class="project-desc">A modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 28.9M</span>
-                                <span><i class="fa-solid fa-heart"></i> 9.4K</span>
-                            </div>
-                            <span class="badge-type">Mod</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="https://picsum.photos/64/64?random=3" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Complementary Reimagined</h5>
-                                <span class="project-author">by <a href="#">EminGT</a></span>
-                                <p class="project-desc">An exceptional shader pack designed to complement Minecraft's original visual style.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 15.4M</span>
-                                <span><i class="fa-solid fa-heart"></i> 7.1K</span>
-                            </div>
-                            <span class="badge-type">Shader</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="https://picsum.photos/64/64?random=4" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Lithium</h5>
-                                <span class="project-author">by <a href="#">jellysquid3</a></span>
-                                <p class="project-desc">A general-purpose optimization mod for Minecraft which improves physics, chunk loading, and tick times.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 32.1M</span>
-                                <span><i class="fa-solid fa-heart"></i> 8.9K</span>
-                            </div>
-                            <span class="badge-type">Mod</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="https://picsum.photos/64/64?random=5" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Faithful 32x</h5>
-                                <span class="project-author">by <a href="#">FaithfulTeam</a></span>
-                                <p class="project-desc">The original high-resolution resource pack that keeps Minecraft's default look while doubling detail.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 19.8M</span>
-                                <span><i class="fa-solid fa-heart"></i> 6.2K</span>
-                            </div>
-                            <span class="badge-type">Resource Pack</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="card-top d-flex gap-3 align-items-start">
-                            <img src="https://picsum.photos/64/64?random=6" alt="Icon" class="project-icon">
-                            <div class="project-info">
-                                <h5 class="project-name text-white mb-1">Fabric API</h5>
-                                <span class="project-author">by <a href="#">modmuss50</a></span>
-                                <p class="project-desc">Core library inter-mod hooks and essential measures for modding with Fabric toolchain.</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom d-flex justify-content-between align-items-center mt-3 pt-3">
-                            <div class="project-stats">
-                                <span><i class="fa-solid fa-download"></i> 89.1M</span>
-                                <span><i class="fa-solid fa-heart"></i> 22.0K</span>
-                            </div>
-                            <span class="badge-type">Library</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Banner App Modblock Promo -->
-            
+            <!-- Container để JS render danh sách Card động -->
+            <div class="row g-4 mb-5" id="project-list"></div>
 
         </div>
     </main>
@@ -250,6 +122,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
